@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-07 18:20:57.971234",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_lahd",
+  "naming_series",
+  "get_pass_date",
+  "supplier",
+  "parchi_details_section",
+  "parchi_no",
+  "gross_weight",
+  "net_weight",
+  "column_break_wbrt",
+  "bag_no",
+  "total_weight",
+  "items_section",
+  "item_table",
+  "total_gw_qty",
+  "total_bags",
+  "difference_from_parchi_section",
+  "difference_gw",
+  "difference_bags",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_lahd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "get_pass_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parchi_details_section",
+   "fieldtype": "Section Break",
+   "label": "Parchi Details"
+  },
+  {
+   "fieldname": "parchi_no",
+   "fieldtype": "Int",
+   "label": "Parchi No."
+  },
+  {
+   "fieldname": "gross_weight",
+   "fieldtype": "Float",
+   "label": "Gross Weight (KG)"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Float",
+   "label": "Net Weight (KG)"
+  },
+  {
+   "fieldname": "column_break_wbrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bag_no",
+   "fieldtype": "Int",
+   "label": "Bag No."
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight(KG)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Item"
+  },
+  {
+   "fieldname": "item_table",
+   "fieldtype": "Table",
+   "options": "Gate Pass Item"
+  },
+  {
+   "fieldname": "total_gw_qty",
+   "fieldtype": "Float",
+   "label": "Total Gross Weight Qty (KG)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_bags",
+   "fieldtype": "Int",
+   "label": "Total Bags",
+   "read_only": 1
+  },
+  {
+   "fieldname": "difference_from_parchi_section",
+   "fieldtype": "Section Break",
+   "label": "Difference From Parchi"
+  },
+  {
+   "fieldname": "difference_gw",
+   "fieldtype": "Float",
+   "label": "Difference Gross Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "difference_bags",
+   "fieldtype": "Int",
+   "label": "Difference Bags",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gate Pass",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-07 18:50:08.248557",
+ "modified_by": "Administrator",
+ "module": "inventeam_torzel",
+ "name": "Gate Pass",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

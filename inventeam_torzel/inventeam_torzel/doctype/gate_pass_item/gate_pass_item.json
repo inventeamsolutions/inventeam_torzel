@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-07 18:28:34.086829",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_q4t4",
+  "item_name",
+  "bags_no",
+  "gross_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_q4t4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bags_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Bags No"
+  },
+  {
+   "fieldname": "gross_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gross Quantity (KG)",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-07 18:46:24.148662",
+ "modified_by": "Administrator",
+ "module": "inventeam_torzel",
+ "name": "Gate Pass Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
